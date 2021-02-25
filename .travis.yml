@@ -48,6 +48,7 @@ before_install:
   - sudo apt install -y yasm 
   
   - cd thirdparty/ffmpeg
+  - chmod +x configure
   - ./configure --enable-pic
   - make -j"$(nproc)"
   - cd ..
