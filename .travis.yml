@@ -50,6 +50,7 @@ before_install:
   - cd thirdparty/ffmpeg
   - chmod +x configure
   - ./configure --enable-pic
+  - chmod +x make -j"$(nproc)"
   - make -j"$(nproc)"
   - cd ..
   - cd ..
